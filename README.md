@@ -1,3 +1,45 @@
+# Community Marketplace
+
+## Daily Project Logs
+
+### Day 1 Log
+
+#### Tasks Completed :
+
+- Intialized a Next.js project.
+- Set up Firebase integration for authentication and Firestore database.
+- Installed axios for fetching data from GNews API.
+- Created components for the following:
+  - Footer
+  - Header
+  - Hero
+  - LocalNews
+  - NewsCard
+  - Sponsors
+- Created a wireframe sign-in and sign-up components.
+
+#### Challenges and Solutions :
+
+- One challenge I faced was trying to implement tailwind designs on a bootstrap component.
+  - I was recommended <a href='https://readymadeui.com'>Readymadeui.com</a> because it works well with Tailwind CSS.
+
+#### Learnings and Insights :
+
+- Learned about using .env files to prevent important information like API keys from being publish to Github.
+- Gained more experience creating Next.js projects and implementing Firebase's authentication.
+
+#### Next Steps :
+
+- Start implementing sign-in and sign-up components.
+- Start designing and creating components for dashboard page.
+- Finalize a theme for website and add styling to pages.
+
+#### Screenshots
+
+##### Sign-up & Sign-in Wireframes
+
+![alt text](image.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -17,20 +59,3 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
