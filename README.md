@@ -62,6 +62,39 @@
 - Style sign-in and sign-out pages.
 - Finalize a design layout for a Dashboard page.
 
+### Day 3 Log
+
+#### Tasks completed :
+
+- Implemented Firebase authentication by creating components for the following:
+  - Signing up with email and password
+  - Signing in with email and password
+  - Logging in with Google
+  - Signing out
+- Created Sign-In and Sign-Up pages.
+- Applied Tailwind CSS styles to both pages using Unsplash images.
+- Designed a wireframe for the dashboard page.
+
+#### Challenges and Solutions :
+
+- A problem I faced was figuring out how to layout the dashboard in a logical way.
+  - I tackled this issue by utilizing sites like Pinterest to find inspiration and explore similar websites.
+
+#### Learnings and Insights :
+
+- I learned how to create SVG components and pass functions from one component to another as props, then reference them back to the original component. For example, my `Gmail` component contains the SVG for the logo, and I passed the `handleGoogleSignIn` function as a prop, then referenced it back in the `GoogleSignIn` component.
+
+#### Next Steps :
+
+- Develop and style the dashboard page.
+- Implement CRUD functionality on the dashboard page.
+
+#### Screenshots
+
+##### Dashboard Wireframe
+
+![alt text](image-1.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
