@@ -40,6 +40,28 @@
 
 ![alt text](image.png)
 
+### Day 2 Log
+
+#### Tasks Completed :
+
+- Finished designing and styling the Header and Hero Components.
+- Fixed and completed designs for Home/ Splash Page.
+
+#### Challenges and Solutions :
+
+- One challenge I faced was trying to convert the readymade Tailwind header into a Next.js component. Another was attempting to apply a background image to the hero section.
+  - I solved these problems by researching the issues and examining how others approached them. I tested multiple methods until finding one that worked for me.
+
+#### Learnings and Insights :
+
+- I was able to delve a little deeper into the Tailwind documentation and discover methods that I can apply to future projects. For instance, using arbitrary values to customize my design rather than relying solely on Tailwind's preset sizes.
+
+#### Next Steps :
+
+- Create components for Email & Password: signin and signup, Google authentication, and Signing out.
+- Style sign-in and sign-out pages.
+- Finalize a design layout for a Dashboard page.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
