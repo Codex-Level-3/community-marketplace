@@ -33,6 +33,8 @@ export default function Signup() {
         password
       );
       setUser(userCred.user);
+      setEmail("");
+      setPassword("");
     } catch (error) {
       console.error("Error occurred during signing up: ", error);
     }
@@ -40,14 +42,17 @@ export default function Signup() {
 
   return (
     <>
-      <form className="flex flex-col justify-center max-w-lg mx-auto px-4 space-y-6 font-[sans-serif] text-[#333]">
+      <form
+        onSubmit={handleEmailSignup}
+        className="flex flex-col justify-center max-w-lg mx-auto px-4 space-y-6 font-[sans-serif] text-[#333]"
+      >
         <label className="flex flex-col text-xl">
           Email:
           <input
             className="px-4 py-2 text-base rounded-md bg-white border border-gray-400 w-full outline-blue-500"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-            type="text"
+            type="email"
             name="email"
             id="email"
             aria-placeholder="email"
@@ -58,7 +63,7 @@ export default function Signup() {
           Password:
           <input
             className="px-4 py-2 text-base rounded-md bg-white border border-gray-400 w-full outline-blue-500"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             value={password}
             type="password"
             name="password"
@@ -67,12 +72,9 @@ export default function Signup() {
           />
         </label>
 
-        <div
-          onClick={handleEmailSignup}
-          className="cursor-pointer px-6 py-2.5 rounded text-white text-lg text-center tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
-        >
+        <button className="cursor-pointer px-6 py-2.5 rounded text-white text-lg text-center tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
           Sign Up
-        </div>
+        </button>
       </form>
     </>
   );
