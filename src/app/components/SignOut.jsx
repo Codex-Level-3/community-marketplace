@@ -27,5 +27,12 @@ export default function SignOut() {
       console.error("Error occured during sign out: ", error);
     }
   }
-  return <div onClick={handleSignOut}>Sign Out</div>;
+  return (
+    <div
+      className="text-rose-700 hover:text-pink-600 font-semibold cursor-pointer"
+      onClick={handleSignOut}
+    >
+      Sign Out
+    </div>
+  );
 }
