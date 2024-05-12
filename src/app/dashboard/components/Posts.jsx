@@ -33,7 +33,7 @@ export default function Posts() {
       });
       return () => unsub();
     }
-  }, [user]);
+  }, [user, showMyPost]);
 
   return (
     <section>
