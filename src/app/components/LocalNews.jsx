@@ -23,7 +23,7 @@ export default function LocalNews() {
   }, []);
   return (
     <section>
-      <h2 className="text-3xl text-blue-500 font-semibold mb-4 mx-3">
+      <h2 className="text-3xl text-blue-500 font-semibold mb-4 mx-3 pt-4">
         Local News: In The Know!
       </h2>
       <div className="flex gap-x-2.5 gap-y-4 flex-wrap">
