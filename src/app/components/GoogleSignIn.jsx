@@ -4,8 +4,12 @@ import { signInWithPopup } from "firebase/auth";
 
 import { auth, provider } from "../firebaseConfig";
 import Gmail from "../svgs/Gmail";
+import { useState } from "react";
 
 export default function GoogleSignIn() {
+  //state management
+  const [user, setUser] = useState("");
+
   //Google handler
   async function handleGoogleSignIn() {
     try {
