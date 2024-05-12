@@ -2,20 +2,18 @@
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { auth } from "../firebaseConfig";
+import { useRouter } from "next/navigation";
 
 export default function SignIn() {
   //state management
-  const [userAuth, setUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const router = useRouter();
   //side effects
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        setUser(user);
-      } else {
-        setUser(null);
+        router.push("/");
       }
     });
   }, []);

@@ -5,20 +5,20 @@ import {
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth } from "../firebaseConfig";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Signup() {
   //State management
-  const [userAuth, setUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
   //Side effects
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        setUser(user);
-      } else {
-        setUser(null);
+        router.push("/");
       }
     });
   }, []);
@@ -76,6 +76,12 @@ export default function Signup() {
           Sign Up
         </button>
       </form>
+      <p className="mx-3 pt-4 font-semibold">
+        Already have an account?{" "}
+        <Link className="text-violet-600 hover:text-purple-400" href="/signin">
+          Click Here
+        </Link>
+      </p>
     </>
   );
 }
