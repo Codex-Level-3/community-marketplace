@@ -10,7 +10,7 @@ export default function Posts() {
   // state management
   const [posts, setPosts] = useState([]);
   const [user, setUser] = useState(null);
-  const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState(false);
 
   //side effects
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Posts() {
   useEffect(() => {
     if (user) {
       const userId = auth.currentUser.uid;
-      const showMyPost = checked ? where("userId", "==", userId) : "";
+      // const showMyPost = checked ? where("userId", "==", userId) : "";
       const q = query(collection(db, "posts"));
       const unsub = onSnapshot(q, (snapshot) => {
         const postArray = snapshot.docs.map((doc) => ({
