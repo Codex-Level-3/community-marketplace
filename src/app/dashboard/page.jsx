@@ -29,6 +29,7 @@ export default function Page() {
       }
     });
     return () => unsub();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
