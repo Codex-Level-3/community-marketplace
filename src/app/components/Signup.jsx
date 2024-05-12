@@ -21,7 +21,8 @@ export default function Signup() {
         router.push("/");
       }
     });
-  }, [router]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Email + Password handler
   async function handleEmailSignup(e) {
