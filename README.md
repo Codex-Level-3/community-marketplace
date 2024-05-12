@@ -1,5 +1,9 @@
 # Community Marketplace
 
+This Community Marketplace project embodies the culmination of my learning journey this semester. It encompasses a diverse range of skills and technologies acquired, from intializing a Next.js project to the integration of essential npm packages like react-bootstrap and axios. Leveraging Firebase's authentication and Firestore database capabilities, I constructed a robust CRUD (Create, Read, Update, Delete) application, allowing seamless data management. Furthermore, I implemented features such as fetching data from external APIs and crafting dynamic components to showcase this information effectively.
+
+In addition to becoming proficient in backend functionality, I also honed my frontend development skills by employing Tailwind CSS to meticulously style and design the webpage. This comprehensive project not only demonstrates my proficiency in various tools and frameworks but also highlights my ability to integrate them cohesively to build a fully functional and visually appealing web application.
+
 ## Daily Project Logs
 
 ### Day 1 Log
@@ -124,6 +128,31 @@ As I explore the CRUD (Create, Read, Update, Delete) process, It helps me to rea
 - Add routing to the signin and signup pages.
 - Figure out a way to add messages to inform users they must sign in or sign up to see the dashboard page.
 - Add more styling to the comment section of posts.
+
+### Day 5 Log
+
+#### Tasks Completed :
+
+- Applied Tailwind CSS styling to components to finalize the overall look of the website.
+- Installed react-bootstrap for the comment section and applied their accordion component to `Post.jsx`.
+- Added a CTA button to `Hero.jsx`.
+- Implemented Next.js `useRouter()` on the sign-in and sign-up pages.
+- Enhanced `AddComment.jsx` by adding a displayName feature.
+  - If the user is logged in and has a display name, it shows `Logged in as: [displayName]`.
+  - If a user doesn't have a display name, it displays an input field for the user to enter their name.
+
+#### Challenges and Solutions :
+
+- I encountered an issue with my Bootstrap accordion not displaying comments. Using Google's dev tools, I identified the issue and initially fixed it in `global.css`. However, I later uninstalled and reinstalled Bootstrap, which resolved the problem.
+- Additionally, I faced a strange bug with my Tailwind signup button. I resolved it by using the !important keyword in the CSS file.
+
+#### Learnings and Insights :
+
+- Through working with Next.js's useRouter() and CRUD operations, I gained valuable experience. Dealing with the encountered bugs also helped enhance my problem-solving skills.
+
+#### Next Steps :
+
+- Proceed with refining the site's functionality and implementing Framer Motion.
 
 ## Image Credits:
 
