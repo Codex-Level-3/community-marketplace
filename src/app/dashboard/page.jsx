@@ -18,7 +18,7 @@ export default function page() {
   function onShow(boolean) {
     setShow(boolean);
   }
-
+  const router = useRouter();
   //side effects
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
@@ -29,8 +29,8 @@ export default function page() {
       }
     });
     return () => unsub();
-  });
-  const router = useRouter();
+  }, []);
+
   return (
     <main>
       {user ? (
