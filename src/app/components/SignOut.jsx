@@ -29,7 +29,7 @@ export default function SignOut() {
   }
   return (
     <div
-      className="text-rose-700 hover:text-pink-600 font-semibold cursor-pointer"
+      className="text-lg text-rose-700 hover:text-pink-600 font-semibold cursor-pointer"
       onClick={handleSignOut}
     >
       Sign Out
