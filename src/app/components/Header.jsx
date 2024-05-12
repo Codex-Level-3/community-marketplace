@@ -14,10 +14,10 @@ export default function Header() {
 
   return (
     <header className="flex shadow-lg py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50">
-      <div className="flex flex-wrap items-center justify-between gap-4 w-full">
+      <div className="flex flex-wrap items-center justify-between gap-4 w-full ">
         <Link
           href="/"
-          className="lg:absolute max-lg:left-10 lg:top-2/4 lg:left-2/4 lg:-translate-x-1/2 lg:-translate-y-1/2 text-2xl font-semibold text-blue-600 hover:text-sky-600"
+          className="lg:absolute max-lg:left-10 lg:top-2/4 lg:left-2/4 lg:-translate-x-1/2 lg:-translate-y-1/2 text-2xl font-semibold text-blue-600 hover:text-sky-600 no-underline"
         >
           Community Marketplace
         </Link>
@@ -33,7 +33,7 @@ export default function Header() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-4 fill-black"
+              className="w-4 fill-black"
               viewBox="0 0 320.591 320.591"
             >
               <path
@@ -51,7 +51,7 @@ export default function Header() {
             <li className="mb-6 hidden max-lg:block">
               <Link
                 href="/"
-                className="text-xl font-semibold text-blue-600 hover:text-sky-600"
+                className="text-2xl font-semibold text-blue-600 hover:text-sky-600 no-underline"
               >
                 Community Marketplace
               </Link>
@@ -59,7 +59,7 @@ export default function Header() {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <Link
                 href="/"
-                className="hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]"
+                className="hover:text-[#007bff] text-[#007bff] block font-semibold text-lg no-underline"
               >
                 Home
               </Link>
@@ -67,7 +67,7 @@ export default function Header() {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <Link
                 href="/dashboard"
-                className="hover:text-[#007bff] text-[#333] block font-semibold text-[15px]"
+                className="hover:text-[#007bff] text-[#333] block font-semibold text-lg no-underline"
               >
                 Dashboard
               </Link>
@@ -80,25 +80,34 @@ export default function Header() {
 
         <div className="flex items-center ml-auto space-x-6">
           <button className="font-semibold text-[15px] border-none outline-none">
-            <Link href="/signin" class="text-[#007bff] hover:underline">
+            <Link
+              href="/signin"
+              className="text-[#007bff] hover:underline no-underline"
+            >
               Login
             </Link>
           </button>
-          <button className="px-4 py-2 text-sm rounded-sm font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]">
-            <Link href="/signup">Sign up</Link>
+          <button>
+            <Link
+              id="signupBtn"
+              href="/signup"
+              className="px-4 py-2 text-sm rounded-sm font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff] no-underline"
+            >
+              Sign up
+            </Link>
           </button>
 
-          <button onClick={handleToggle} id="toggleOpen" class="lg:hidden">
+          <button onClick={handleToggle} id="toggleOpen" className="lg:hidden">
             <svg
-              class="w-7 h-7"
+              className="w-7 h-7"
               fill="#333"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
