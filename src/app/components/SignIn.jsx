@@ -16,7 +16,7 @@ export default function SignIn() {
         router.push("/");
       }
     });
-  }, []);
+  }, [router]);
 
   // email & password sign-in handler
   async function handleEmailSignin(e) {

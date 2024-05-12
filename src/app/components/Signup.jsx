@@ -21,7 +21,7 @@ export default function Signup() {
         router.push("/");
       }
     });
-  }, []);
+  }, [router]);
 
   // Email + Password handler
   async function handleEmailSignup(e) {
