@@ -23,7 +23,7 @@ export default function page() {
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
       if (!user) {
-        router.push("/");
+        router.push("/signup");
       } else {
         setUser(user);
       }
@@ -61,7 +61,7 @@ export default function page() {
       ) : (
         <div className="h-screen flex justify-center items-center">
           <p className="text-5xl text-pink-800 font-bold">
-            This page is protected!
+            This page is protected! Please sign-in or sign-up!
           </p>
         </div>
       )}
