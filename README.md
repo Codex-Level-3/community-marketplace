@@ -95,6 +95,49 @@
 
 ![alt text](image-1.png)
 
+### Day 4 Log
+
+#### Tasks Completed
+
+- Created `Product.jsx` component to render a list of products.
+- Developed `productList.js` to provide static data for products.
+- Implemented basic styling for the product display using Tailwind CSS classes.
+- Established Firebase integration for user authentication in `Post.jsx` and `Modal.jsx` components.
+- Constructed `Post.jsx` component to display individual posts with delete and edit functionality.
+  - Created svg componentes with editing functionality - `Edit.jsx` and post deletion functionality - `Trash.jsx`.
+- Built `Posts.jsx` component to fetch and display posts, managing user authentication.
+- Created `AddComment.jsx` component to enable users to add comments to posts.
+- Implemented `ViewComments.jsx` component to display comments for a post.
+- Developed `Modal.jsx` component for adding and editing posts with form inputs.
+- Added `AddPost.jsx` component for initiating post creation process with a button click.
+
+#### Challenges and Solutions
+
+- The only problem I encountered was the typos/errors/bugs with the signin and signup pages. I fixed it by paying attention to the behavior of the pages and going over the code line by line.
+
+#### Learnings and Insights
+
+As I explore the CRUD (Create, Read, Update, Delete) process, It helps me to realize how data behaves in an application. Each action – creating, reading, updating, or deleting – shows me how users engage with information. I'm intrigued to dive deeper into the CRUD process. Understanding how each action impacts data gives me a clearer picture of how to design user-friendly interfaces.
+
+#### Next Steps
+
+- Add routing to the signin and signup pages.
+- Figure out a way to add messages to inform users they must sign in or sign up to see the dashboard page.
+- Add more styling to the comment section of posts.
+
+## Image Credits:
+
+The images for the Sponsor's section were AI-generated. The Hero, Signin, and Signup Images came from Unsplash. The images for the product cards also came from Unsplash.
+
+- Hero: Tim Mossholder
+- Signin & Signup: Youssef Naddam
+- Vintage Table: Elyssa Fahndrich
+- Painting: Mayur Deshpande
+- Handbag: Arno Senoner
+- iPad: Rahul Chakraborty
+- Jewlery: Tara Yates
+- Pottery: Toa Heftiba
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
