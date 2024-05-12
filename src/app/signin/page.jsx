@@ -1,7 +1,7 @@
 import GoogleSignIn from "../components/GoogleSignIn";
 import SignIn from "../components/SignIn";
 
-export default function page() {
+export default function Page() {
   return (
     <main className="flex h-full w-full">
       <div className="w-1/2 bg-sky-200 justify-center content-center">

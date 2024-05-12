@@ -10,7 +10,7 @@ import AddPost from "../components/AddPost";
 import Posts from "./components/Posts";
 import Modal from "../components/Modal";
 
-export default function page() {
+export default function Page() {
   //state management
   const [user, setUser] = useState(null);
   const [show, setShow] = useState(false);
