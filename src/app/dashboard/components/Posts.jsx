@@ -20,9 +20,8 @@ export default function Posts() {
   }, []);
 
   useEffect(() => {
-    const userId = auth.currentUser.uid;
-
     if (user) {
+      const userId = auth.currentUser.uid;
       const showMyPost = checked ? where("userId", "==", userId) : "";
       const q = query(collection(db, "posts"));
       const unsub = onSnapshot(q, (snapshot) => {
