@@ -1,5 +1,4 @@
 "use client";
-
 import Modal from "@/app/components/Modal";
 import { db } from "@/app/firebaseConfig";
 import Edit from "@/app/svgs/Edit";
@@ -7,6 +6,8 @@ import Trash from "@/app/svgs/Trash";
 import { deleteDoc, doc } from "firebase/firestore";
 import { useState } from "react";
 import AddComment from "./AddComment";
+import ViewComments from "./ViewComments";
+import Accordion from "react-bootstrap/Accordion";
 
 export default function Post({ post, user }) {
   //state management
@@ -49,6 +50,16 @@ export default function Post({ post, user }) {
           )}
         </div>
         <AddComment post={post} />
+        <div className="w-full mx-auto">
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Comments</Accordion.Header>
+              <Accordion.Body>
+                <ViewComments post={post} />
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
       </div>
     </>
   );
