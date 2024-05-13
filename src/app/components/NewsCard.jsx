@@ -4,7 +4,13 @@ import React from "react";
 export default function NewsCard({ article }) {
   return (
     <div className="bg-white shadow-[0_2px_18px_-6px_rgba(0,0,0,0.2)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] ">
-      <Image src={article.image} alt="article image" className="w-full" />
+      <img
+        src={article.image}
+        alt="article image"
+        width={150}
+        height={150}
+        className="w-full"
+      />
       <div className="px-4 py-6 flex flex-col justify-center content-center">
         <h3 className="text-[#333] text-xl font-bold">{article.title}</h3>
         <p className="mt-4 text-sm text-gray-500">{article.description}</p>
