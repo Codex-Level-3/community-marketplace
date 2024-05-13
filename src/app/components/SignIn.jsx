@@ -16,7 +16,6 @@ export default function SignIn() {
         router.push("/");
       }
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // email & password sign-in handler
