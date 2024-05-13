@@ -9,7 +9,7 @@ export const provider = new GoogleAuthProvider();
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE,
+  apiKey: "AIzaSyD4qIWcPpPkARyWV-mhB8-Wvjd55XBFWz4",
   authDomain: "community-project-7e2e1.firebaseapp.com",
   projectId: "community-project-7e2e1",
   storageBucket: "community-project-7e2e1.appspot.com",
